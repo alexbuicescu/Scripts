@@ -1,2 +1,2 @@
-Make sure to install ffmpeg beforehand.
-youtube-dl -i --yes-playlist -x --audio-format "mp3" "https://www.youtube.com/watch?v=psuRGfAaju4&index=1&list=PL70A21963BE29EE48"
+Make sure to install youtube-dl and ffmpeg beforehand.
+youtube-dl -i --yes-playlist -x -f bestaudio --audio-format "mp3" "https://www.youtube.com/watch?v=psuRGfAaju4&index=1&list=PL70A21963BE29EE48"
