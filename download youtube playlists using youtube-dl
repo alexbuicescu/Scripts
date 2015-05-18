@@ -1,2 +1,3 @@
 Make sure to install youtube-dl and ffmpeg beforehand.
+If you get 'index' is not recognized as an internal or batch command, then enclose the URL inside "".
 youtube-dl -i --yes-playlist -x -f bestaudio --audio-format "mp3" "https://www.youtube.com/watch?v=psuRGfAaju4&index=1&list=PL70A21963BE29EE48"
