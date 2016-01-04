@@ -1,0 +1,17 @@
+Just to sum up to the Brenden's answer, the real problem is with the libsdl1.2 package, as stated in this bug report[0].
+
+The solution is ready, but somehow isn't available on default Ubuntu package sources yet (at least not for me). So, a way to solve this is to import the developer PPA and install the patched package directly:
+
+sudo apt-add-repository ppa:timo-jyrinki/ppa
+sudo apt-get update
+sudo apt-get install libsdl1.2debian
+You can later remove the PPA with:
+
+sudo apt-get install ppa-purge
+sudo ppa-purge ppa:timo-jyrinki/ppa
+All credits to Timo Jyrinki[1].
+
+This solved the problem for me, in a gnome-shell environment (which uses gdm).
+
+[0] https://bugs.launchpad.net/ubuntu/+source/libsdl1.2/+bug/1280665
+[1] https://launchpad.net/~timo-jyrinki
