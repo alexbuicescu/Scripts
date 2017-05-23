@@ -27,6 +27,3 @@ print actualMonths, totalInterestSum
 # 4000 monthly
 # actual months 62
 # total interest 23975.2791579
-
-#abonamente, transport slatina, mancare
-130 + 320 + 500
