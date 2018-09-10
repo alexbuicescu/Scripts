@@ -1,6 +1,6 @@
 # Scripts
 
-### Jumping over words in intellij's terminal is not working. Add this to **~/.inputrc**:
+### Jumping over words in intellij's terminal is not working. Add this to ```~/.inputrc```:
 ```bash
 "\e\e[C": forward-word
 "\e\e[D": backward-word
