@@ -19,8 +19,13 @@
   pip install youtube-dl
   ```
 
-1. ### Use youtube-dl:
-  ```bash
-  cd my/path/to/music/folder
-  youtube-dl -i --yes-playlist -x -f bestaudio --prefer-ffmpeg --audio-format "mp3" "url_here"
-  ```
+### Use youtube-dl:
+1. For audio only (`-x` option):
+    ```bash
+    cd my/path/to/music/folder
+    youtube-dl -i --yes-playlist -x -f bestaudio --prefer-ffmpeg --audio-format "mp3" "url_here"
+    ```
+1. For videos (default is `bestvideo+bestaudio` for format):
+    ```bash
+    youtube-dl -i --yes-playlist "url_here"
+    ```
