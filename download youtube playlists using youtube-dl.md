@@ -25,7 +25,7 @@
     cd my/path/to/music/folder
     youtube-dl -i --yes-playlist -x -f bestaudio --prefer-ffmpeg --audio-format "mp3" "url_here"
     ```
-1. For videos (default is `bestvideo+bestaudio` for format):
+1. For videos (use `--recode-video "mp4"` if you want mp4):
     ```bash
-    youtube-dl -i --yes-playlist "url_here"
+    youtube-dl -i --yes-playlist -f "bestvideo+bestaudio" "url_here"
     ```
